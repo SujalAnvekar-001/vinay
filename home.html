@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glamorous Form Page</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to right, #ffccd5, #fff0f3);
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            border: 3px solid #ff4d6d;
+            width: 300px;
+        }
+        input, select {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 2px solid #ff4d6d;
+            border-radius: 10px;
+            background: #ffe5ec;
+            color: #d00040;
+            font-size: 16px;
+        }
+        .submit-btn {
+            background: #ff4d6d;
+            color: white;
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            width: 100%;
+        }
+        .submit-btn:hover {
+            background: #d00040;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 style="color: #d00040;">Enter Your Details</h2>
+        <form id="userForm">
+            <input type="text" id="Fname" placeholder="First Name" required>
+            <input type="text" id="Lname" placeholder="Last Name" required>
+            <select id="gender" required>
+                <option value="">Select Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+            <input type="tel" id="number" placeholder="Phone Number" required>
+            <button type="button" class="submit-btn" onclick="saveData()">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        function saveData() {
+            let Fname = document.getElementById("Fname").value;
+            let Lname = document.getElementById("Lname").value;
+            let gender = document.getElementById("gender").value;
+            let number = document.getElementById("number").value;
+            
+            
+            
+    
+            window.location.href = "hi.html";
+        }
+    </script>
+</body>
+</html>
